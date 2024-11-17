@@ -51,9 +51,15 @@ def analysis():
     analysis_results.save(filename="static/img/result.jpg")
     severity         = len(analysis_results.boxes)
 
+    skintype = 'dry'
+
+    suggestion = client.get_reccomendation(severity, skintype)
+    
     data = {
         'message': f"Facial Analysis of {severity} severity",
-        'suggestion': client.get_reccomendation(severity)
+        'cleanser': suggestion[0],
+        'moisturizer': suggestion[1],
+        'sunscreen': suggestion[2],
     }
 
     return render_template('analysis.html', data=data)

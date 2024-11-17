@@ -12,13 +12,18 @@ class HackneClient:
     
         self.acne_ranges = (
             (0, 3),
-            (4, 6),
-            (7, 999)
+            (7, 10),
+            (7, 1e99)
         )
-        self.product_links = (
-            "https://shorturl.at/kyLC4",
-            "https://shorturl.at/iArhm",
-            "https://shorturl.at/DtHeC"
+        self.product_lists = {
+            'dry': ("Moisturizer: SKIN1004 Hyalu-Cica Moisture Cream (AM/PM)", "Sunscreen: SKIN1004 Hyalu-Cica Water-Fit Sun Serum SPF50+ PA++++ (AM)"),
+            'comb': ("Moisturizer: SKIN1004 Centella Soothing Cream (AM/PM)", "SKIN1004 Hyalu-Cica Water-Fit Sun Serum SPF50+ PA++++ (AM)"),
+            'oily': ("Moisturizer: SKIN1004 Poremizing Light Gel Cream", "SKIN1004 Centella Air-Fit Suncream Plus SPF50+ PA++++ (AM)")
+        }
+        self.cleansers = (
+            "Skin1004 Centella Ampoule Foam (AM/PM)",
+            "Skin1004 TEA-TRICA BHA FOAM (AM/PM)",
+            "Skin1004 TEA-TRICA BHA FOAM (AM/PM)"
         )
 
     def predict(self, source_path: str):
@@ -34,7 +39,9 @@ class HackneClient:
         for result in results:
             return result
     
-    def get_reccomendation(self, severity) -> str:
-        for range, product in zip(self.acne_ranges, self.product_links):
+    def get_reccomendation(self, severity: int, skin_type: str) -> str:
+        for range, product in zip(self.acne_ranges, self.cleansers):
             if range[0] <= severity and severity <= range[1]:
-                return f"Based on your facial scan results and skin type, we reccomend you purchase this cleanser, based on your skin condition and type: {product}! Additionally, pair this with the following moisturizers for your daily routine: https://tinyurl.com/am-pm-cream.\n\n"
+                cleanser = product
+        
+        return (cleanser, self.product_lists[skin_type][0], self.product_lists[skin_type][1])
