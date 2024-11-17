@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.utils import secure_filename
 
 from HackneClient import HackneClient
+from random import choice
 
 from datetime import datetime
 import os
@@ -51,15 +52,18 @@ def analysis():
     analysis_results.save(filename="static/img/result.jpg")
     severity         = len(analysis_results.boxes)
 
-    skintype = 'dry'
+    skintype = choice(('dry', 'oily', 'comb'))
 
-    suggestion = client.get_reccomendation(severity, skintype)
+    suggestion, links = client.get_reccomendation(severity, skintype)
     
     data = {
         'message': f"Facial Analysis of {severity} severity",
         'cleanser': suggestion[0],
         'moisturizer': suggestion[1],
         'sunscreen': suggestion[2],
+        'c_link': links[0],
+        'm_link': links[1],
+        's_link': links[2]
     }
 
     return render_template('analysis.html', data=data)

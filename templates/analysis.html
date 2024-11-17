@@ -108,7 +108,7 @@
             height: flex;
             border: 3px solid #FF1177;
             border-radius: 25px;
-            margin: 30px 0;
+            margin: 30px 30px;
         }
 
         .text-description {
@@ -121,7 +121,7 @@
         }
         
         img {
-            border-radius: 25px;
+            border-radius: 20px;
         }
     </style>
 </head>
@@ -142,13 +142,13 @@
         <h1>AM/PM Skincare Routine</h1>
         
         <div class="content-box">
-            <img src="{{ url_for('static', filename='img/result.jpg') }}" width=500 height="620" class="center"/>
+            <img src="{{ url_for('static', filename='img/result.jpg') }}" width=500 height="630" class="center"/>
         </div>
         
         <p class="text-description">{{ data.message }}</p>
         
         <div class="content-box">
-            <p style="margin:15px">Based on our facial analysis on your skin condition and needs, we reccomend for a cleanser, you purchase the {{ data.cleanser }}. For a moisturizer, we'd reccomend {{ data.moisturizer }} in your case,</p>
+            <p style="margin:15px">Based on our facial analysis on your skin condition and needs, we reccomend for a cleanser, you purchase the <a href="{{ data.c_link }}">{{ data.cleanser }}</a>. For a moisturizer, we'd reccomend <a href="{{ data.m_link }}">{{ data.moisturizer }}</a> in your case, and for sunscreen, we'd reccomend the <a href="{{ data.s_link }}">{{ data.sunscreen }}</a>. </p>
             <br>
             <p style="margin:15px">Every morning and night, apply your cleanser, scrub, and rinse. Then, apply the appropriate moisturizer and repeat. You can expect to see visible results soon!</p>
         </div>
