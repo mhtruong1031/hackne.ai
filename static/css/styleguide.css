@@ -1,0 +1,33 @@
+:root {
+  --light-title-color: rgba(0, 13, 51, 0.4);
+  --light-input-color: rgba(0, 0, 0, 1);
+  --light-error-color: rgba(255, 75, 75, 1);
+  --light-accent-color: rgba(133, 63, 249, 1);
+  --light-accent-hover-color: rgba(133, 63, 249, 0.2);
+  --light-light-color: rgba(0, 32, 128, 0.12);
+  --light-border-color: rgba(0, 32, 128, 0.2);
+  --light-title-font-family: "Instrument Sans", Helvetica;
+  --light-title-font-weight: 400;
+  --light-title-font-size: 20px;
+  --light-title-letter-spacing: 0px;
+  --light-title-line-height: normal;
+  --light-title-font-style: normal;
+  --light-input-font-family: "Instrument Sans", Helvetica;
+  --light-input-font-weight: 400;
+  --light-input-font-size: 16px;
+  --light-input-letter-spacing: 0px;
+  --light-input-line-height: normal;
+  --light-input-font-style: normal;
+  --light-button-font-family: "Instrument Sans", Helvetica;
+  --light-button-font-weight: 600;
+  --light-button-font-size: 14px;
+  --light-button-letter-spacing: 0px;
+  --light-button-line-height: normal;
+  --light-button-font-style: normal;
+  --light-error-font-family: "Instrument Sans", Helvetica;
+  --light-error-font-weight: 400;
+  --light-error-font-size: 12px;
+  --light-error-letter-spacing: 0px;
+  --light-error-line-height: normal;
+  --light-error-font-style: normal;
+}

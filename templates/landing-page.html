@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #E91E63;
+        }
+
+        .logo-circle {
+            width: 24px;
+            height: 24px;
+            background: #E91E63;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .logo-dot {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            background: #FFC107;
+            border-radius: 50%;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            min-height: 80vh;
+        }
+
+        .new-badge {
+            background: #FFA726;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #E91E63;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            max-width: 800px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: #E91E63;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .shape-left, .shape-right {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #E91E63;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .shape-left {
+            left: -150px;
+            bottom: -150px;
+        }
+
+        .shape-right {
+            right: -150px;
+            top: -150px;
+        }
+
+        .inner-shape {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background: #FFC107;
+            border-radius: 50%;
+            top: 10%;
+            left: 10%;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo-circle">
+                <div class="logo-dot"></div>
+            </div>
+            brand.ai
+        </div>
+        <button class="cta-button">Get Started</button>
+    </nav>
+    
+    <main class="hero">
+        <div class="shape-left">
+            <div class="inner-shape"></div>
+        </div>
+        <div class="shape-right">
+            <div class="inner-shape"></div>
+        </div>
+        
+        <span class="new-badge">NEW</span>
+        <h1>Where AI meets your AM/PM Routine.</h1>
+        <p class="subtitle">AI-powered clarity for your unique journey.</p>
+        <button class="cta-button">Get Started</button>
+    </main>
+
+    <script>
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>

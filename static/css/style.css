@@ -1,0 +1,336 @@
+.home {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.home .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 1024px;
+  position: relative;
+}
+
+.home .overlap {
+  position: absolute;
+  width: 100%;
+  height: 83px;
+  top: 0;
+  left: 0;
+}
+
+.home .home-bar {
+  position: absolute;
+  width: 100%;
+  height: 73px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px #00000040;
+}
+
+.home .hackne-ailogo {
+  position: absolute;
+  width: 199px;
+  height: 56px;
+  top: 17px;
+  left: 40px;
+}
+
+.home .logo-top-left {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: #e41c58;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .img {
+  position: absolute;
+  width: 41px;
+  height: 39px;
+  top: 4px;
+  left: 0;
+  object-fit: cover;
+}
+
+.home .home-button-top {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 136px;
+  top: 21px;
+  left: 555px;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .pricing-button-top {
+  position: absolute;
+  width: 136px;
+  top: 21px;
+  left: 738px;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .get-started-button {
+  all: unset;
+  box-sizing: border-box;
+  width: 202px;
+  height: 68px;
+  top: 15px;
+  left: 1224px;
+  position: absolute;
+}
+
+.home .overlap-group {
+  position: relative;
+  width: 200px;
+  height: 68px;
+}
+
+.home .get-started-button-2 {
+  position: absolute;
+  width: 156px;
+  height: 42px;
+  top: 0;
+  left: 24px;
+}
+
+.home .text-wrapper {
+  position: absolute;
+  width: 200px;
+  top: 6px;
+  left: 0;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: #e41c58;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .overlap-2 {
+  position: absolute;
+  width: 2064px;
+  height: 981px;
+  top: 157px;
+  left: -268px;
+}
+
+.home .overlap-3 {
+  position: absolute;
+  width: 464px;
+  height: 197px;
+  top: 253px;
+  left: 755px;
+}
+
+.home .middle-subcaption {
+  position: absolute;
+  width: 464px;
+  height: 118px;
+  top: 0;
+  left: 0;
+}
+
+.home .overlap-group-2 {
+  position: relative;
+  width: 460px;
+  height: 118px;
+}
+
+.home .text-wrapper-2 {
+  position: absolute;
+  width: 460px;
+  top: 0;
+  left: 0;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: #888888;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .unique-skin-journey {
+  position: absolute;
+  width: 460px;
+  top: 35px;
+  left: 0;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: #888888;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .overlap-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  width: 292px;
+  height: 95px;
+  top: 102px;
+  left: 88px;
+  position: absolute;
+}
+
+.home .pricing-button-top-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: 290px;
+  height: 95px;
+  background-image: url("/static/img/get-started-button-mid.png");
+  background-size: 100% 100%;
+}
+
+.home .button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 262px;
+  top: 22px;
+  left: 14px;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home .overlap-4 {
+  position: absolute;
+  width: 2064px;
+  height: 981px;
+  top: 0;
+  left: 0;
+}
+
+.home .middle-caption {
+  position: absolute;
+  width: 702px;
+  height: 203px;
+  top: 48px;
+  left: 636px;
+}
+
+.home .overlap-5 {
+  position: relative;
+  width: 698px;
+  height: 203px;
+}
+
+.home .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: #e41c58;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .text-wrapper-4 {
+  position: absolute;
+  top: 78px;
+  left: 68px;
+  font-family: "Lalezar", Helvetica;
+  font-weight: 400;
+  color: #e41c58;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .LEFT-PIMPLE {
+  position: absolute;
+  width: 657px;
+  height: 742px;
+  top: 239px;
+  left: 0;
+}
+
+.home .pimple-wrapper {
+  position: relative;
+  width: 389px;
+  height: 628px;
+  left: 268px;
+  background-image: url("/static/img/pimple4-1.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home .pimple {
+  width: 237px;
+  height: 454px;
+  top: 144px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.home .RIGHTPIMPLE {
+  position: absolute;
+  width: 745px;
+  height: 743px;
+  top: 0;
+  right: 0px;
+}
+
+.home .img-wrapper {
+  position: relative;
+  width: 389px;
+  height: 743px;
+  background-image: url("/static/img/pimple3-1.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.home .pimple-2 {
+  width: 234px;
+  height: 469px;
+  top: 149px;
+  left: 155px;
+  position: relative;
+  object-fit: cover;
+}
+
+.home .images {
+  position: absolute;
+  width: 96px;
+  height: 43px;
+  top: 16px;
+  left: 940px;
+  object-fit: cover;
+}
